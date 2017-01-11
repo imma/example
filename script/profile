@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+function _xxx_profile {
+  local shome="${_xxx_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+}
+
+_xxx_profile
