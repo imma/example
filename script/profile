@@ -2,6 +2,8 @@
 
 function _xxx_profile {
   local shome="${_xxx_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+
+  XXX_VERSION='0.0.1'
 }
 
 _xxx_profile
