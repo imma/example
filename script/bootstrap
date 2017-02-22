@@ -5,6 +5,7 @@ function main {
   source "$shome/script/profile"
 
   which aws
+  sudo -E env | grep PATH
 }
 
 main "$@"
