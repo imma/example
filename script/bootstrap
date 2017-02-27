@@ -4,8 +4,7 @@ function main {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  which aws
-  sudo -E env | grep PATH
+  uname -a
 }
 
 main "$@"
