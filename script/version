@@ -4,8 +4,8 @@ function version {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  local ver_example="0.0.1"
-  jq -n --arg example "$ver_example" '{example: $example}'
+  local ver_xxx="0.0.1"
+  jq -n --arg xxx "$ver_xxx" '{xxx: $xxx}'
 }
 
 version "$@"
