@@ -4,7 +4,7 @@ function version {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  local ver_xxx="$(xxx 2>/dev/null | awk '{print $NF}' | sed 's#^v###' || true)"
+  local ver_xxx="$(xxx 2>/dev/null | awk '{print $NF}' | sed 's#^v##' || true)"
   jq -n --arg xxx "$ver_xxx" '{xxx: $xxx}'
 }
 
